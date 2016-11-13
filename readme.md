@@ -1,6 +1,6 @@
 # sainte-lague
 
-An implementation of the Sainte-Laguë (also known as **Webster** or **Schepers**) method. Parliament seat allocation algorithm used in multiple countries such as Germany, Latvia, New Zealand etc…
+An implementation of the **Sainte-Laguë** (also known as **Webster** or **Schepers**) method. Parliament seat allocation algorithm used in multiple countries such as Germany, Latvia, New Zealand etc…
 
 [![npm version](https://img.shields.io/npm/v/sainte-lague.svg)](https://www.npmjs.com/package/sainte-lague)
 [![Build Status](https://travis-ci.org/juliuste/sainte-lague.svg?branch=master)](https://travis-ci.org/juliuste/sainte-lague)
