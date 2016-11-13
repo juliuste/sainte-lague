@@ -2,6 +2,8 @@
 
 An implementation of the **Sainte-Laguë** (also known as **Webster** or **Schepers**) method. Parliament seat allocation algorithm used in multiple countries such as Germany, Latvia, New Zealand etc…
 
+*Attention: Since some countries (like Latvia or Norway) use a modification of the algorithm instead of this vanilla version, you should check your country's electoral legislature. Furthermore, I don't take any responsibility for the accuracy of the calculated numbers, even though I'm pretty confident with my implementation.*
+
 [![npm version](https://img.shields.io/npm/v/sainte-lague.svg)](https://www.npmjs.com/package/sainte-lague)
 [![Build Status](https://travis-ci.org/juliuste/sainte-lague.svg?branch=master)](https://travis-ci.org/juliuste/sainte-lague)
 [![dependency status](https://img.shields.io/david/juliuste/sainte-lague.svg)](https://david-dm.org/juliuste/sainte-lague)
