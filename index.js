@@ -21,8 +21,8 @@ const sum = (votes) => {
 const distribute = (votes, seats) => {
 	// initial settings for divisor finding
 	const voteSum = sum(votes)
-	let low = voteSum / (seats - 1)
-	let high = voteSum / (seats + 1)
+	let low = voteSum / (seats - 2)
+	let high = voteSum / (seats + 2)
 	let divisor = voteSum / seats
 
 	// initial / trivial parliament
