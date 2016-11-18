@@ -45,6 +45,11 @@ The `parliament` variable will look like this:
 }
 ```
 
+## Similar Projects
+
+- [hare-niemeyer](https://github.com/juliuste/hare-niemeyer) - Hare-Niemeyer / Hamilton / largest remainder method
+- [DHondt](https://github.com/economia/DHondt) – D'Hondt method
+
 ## Contributing
 
 If you found a bug, want to propose a feature or feel the urge to complain about your life, feel free to visit [the issues page](https://github.com/juliuste/sainte-lague/issues).
