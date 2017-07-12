@@ -3,5 +3,6 @@ Thumbs.db
 
 .nvm-version
 node_modules
-npm-debug.logdist
+npm-debug.log
+dist
 yarn.lock
