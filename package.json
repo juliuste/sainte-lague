@@ -1,7 +1,7 @@
 {
 	"name": "sainte-lague",
 	"description": "Sainte-Laguë method for seat distribution used in multiple parliamentary elections all over the world",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"keywords": [
 		"sainte-laguë",
 		"sainte-lague",
@@ -23,18 +23,24 @@
 	"homepage": "https://github.com/juliuste/sainte-lague",
 	"repository": "juliuste/sainte-lague",
 	"bugs": "https://github.com/juliuste/sainte-lague/issues",
-	"main": "./index.js",
-	"files": ["index.js"],
-	"dependencies": {
-	},
+	"main": "./dist/index.js",
+	"module": "./index.js",
+	"files": [
+		"index.js",
+		"dist"
+	],
+	"dependencies": {},
 	"devDependencies": {
+		"babel-cli": "^6.24.1",
+		"babel-preset-es2015": "^6.24.1"
 	},
 	"scripts": {
 		"test": "node test.js",
-		"prepublish": "npm test"
+		"transpile": "babel index.js --presets babel-preset-es2015 --out-dir dist",
+		"prepublish": "npm test && npm run transpile"
 	},
-	"engine" : {
-		"node" : ">=4"
+	"engine": {
+		"node": ">=4"
 	},
 	"license": "MIT"
 }
