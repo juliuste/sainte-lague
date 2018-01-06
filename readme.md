@@ -6,9 +6,11 @@ An implementation of the **[Sainte-Laguë](https://en.wikipedia.org/wiki/Webster
 
 [![npm version](https://img.shields.io/npm/v/sainte-lague.svg)](https://www.npmjs.com/package/sainte-lague)
 [![Build Status](https://travis-ci.org/juliuste/sainte-lague.svg?branch=master)](https://travis-ci.org/juliuste/sainte-lague)
+[![Greenkeeper badge](https://badges.greenkeeper.io/juliuste/sainte-lague.svg)](https://greenkeeper.io/)
 [![dependency status](https://img.shields.io/david/juliuste/sainte-lague.svg)](https://david-dm.org/juliuste/sainte-lague)
 [![dev dependency status](https://img.shields.io/david/dev/juliuste/sainte-lague.svg)](https://david-dm.org/juliuste/sainte-lague#info=devDependencies)
 [![license](https://img.shields.io/github/license/juliuste/sainte-lague.svg?style=flat)](LICENSE)
+[![chat on gitter](https://badges.gitter.im/juliuste.svg)](https://gitter.im/juliuste)
 
 ## Installation
 
