@@ -1,7 +1,7 @@
 'use strict'
 
 const assert = require('assert')
-const sl = require('./index')
+const sl = require('.')
 
 // German Bundestag
 const bundestagVotes = {
