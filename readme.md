@@ -8,14 +8,13 @@ An implementation of the **[Sainte-Laguë](https://en.wikipedia.org/wiki/Webster
 [![Build Status](https://travis-ci.org/juliuste/sainte-lague.svg?branch=master)](https://travis-ci.org/juliuste/sainte-lague)
 [![Greenkeeper badge](https://badges.greenkeeper.io/juliuste/sainte-lague.svg)](https://greenkeeper.io/)
 [![dependency status](https://img.shields.io/david/juliuste/sainte-lague.svg)](https://david-dm.org/juliuste/sainte-lague)
-[![dev dependency status](https://img.shields.io/david/dev/juliuste/sainte-lague.svg)](https://david-dm.org/juliuste/sainte-lague#info=devDependencies)
 [![license](https://img.shields.io/github/license/juliuste/sainte-lague.svg?style=flat)](LICENSE)
 [![chat on gitter](https://badges.gitter.im/juliuste.svg)](https://gitter.im/juliuste)
 
 ## Installation
 
 ```shell
-npm install --save sainte-lague
+npm install sainte-lague
 ```
 
 ## Usage
@@ -54,4 +53,4 @@ The `parliament` variable will look like this:
 
 ## Contributing
 
-If you found a bug, want to propose a feature or feel the urge to complain about your life, feel free to visit [the issues page](https://github.com/juliuste/sainte-lague/issues).
+If you found a bug or want to propose a feature, feel free to visit [the issues page](https://github.com/juliuste/sainte-lague/issues).
