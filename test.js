@@ -17,7 +17,7 @@ const bundestag = {
 	linke: 64,
 	gruene: 63
 }
-assert.deepEqual(sl(bundestagVotes, bundestagSeats), bundestag, 'Testing: German Bundestag')
+assert.deepStrictEqual(sl(bundestagVotes, bundestagSeats), bundestag, 'Testing: German Bundestag')
 
 // Rhineland-Palatinate
 const rpVotes = {
@@ -35,7 +35,7 @@ const rp = {
 	fdp: 7,
 	gruene: 6
 }
-assert.deepEqual(sl(rpVotes, rpSeats), rp, 'Testing: Rhineland-Palatinate')
+assert.deepStrictEqual(sl(rpVotes, rpSeats), rp, 'Testing: Rhineland-Palatinate')
 
 // Schleswig-Holstein
 const shVotes = {
@@ -55,4 +55,4 @@ const sh = {
 	piraten: 6,
 	ssw: 3
 }
-assert.deepEqual(sl(shVotes, shSeats), sh, 'Testing: Schleswig-Holstein')
+assert.deepStrictEqual(sl(shVotes, shSeats), sh, 'Testing: Schleswig-Holstein')
