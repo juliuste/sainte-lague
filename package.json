@@ -1,47 +1,59 @@
 {
 	"name": "sainte-lague",
-	"description": "Sainte-Laguë method for seat distribution used in multiple parliamentary elections all over the world",
 	"version": "2.0.1",
+	"description": "Sainte-Laguë method for seat distribution used in multiple parliamentary elections all over the world",
 	"keywords": [
-		"sainte-laguë",
-		"sainte-lague",
-		"sainte",
-		"laguë",
+		"distribution",
+		"election",
+		"highest quotient method",
 		"lague",
-		"webster",
+		"laguë",
+		"proportional",
+		"representation",
+		"sainte",
+		"sainte-lague",
+		"sainte-laguë",
 		"schepers",
 		"seats",
 		"votes",
 		"voting",
-		"election",
-		"highest quotient method",
-		"proportional",
-		"representation",
-		"distribution"
+		"webster"
 	],
-	"author": "Julius Tens <mail@juliustens.eu>",
 	"homepage": "https://github.com/juliuste/sainte-lague",
-	"repository": "juliuste/sainte-lague",
 	"bugs": "https://github.com/juliuste/sainte-lague/issues",
-	"main": "./dist/index.js",
-	"module": "./index.js",
+	"repository": "juliuste/sainte-lague",
+	"license": "ISC",
+	"author": "Julius Tens <mail@juliustens.eu>",
 	"files": [
 		"index.js",
 		"dist"
 	],
-	"dependencies": {},
+	"main": "./dist/index.js",
+	"module": "./index.js",
+	"scripts": {
+		"check-deps": "depcheck --ignores='babel-cli,babel-preset-es2015'",
+		"fix": "eslint --fix index.js test.js",
+		"lint": "eslint index.js test.js",
+		"prepare": "npm run transpile",
+		"prepublishOnly": "npm test",
+		"test": "npm run lint && npm run check-deps && npm run transpile && node test",
+		"transpile": "babel index.js --presets babel-preset-es2015 --out-dir dist"
+	},
 	"devDependencies": {
 		"babel-cli": "^6.26.0",
-		"babel-preset-es2015": "^6.24.1"
+		"babel-preset-es2015": "^6.24.1",
+		"depcheck": "^0.7.2",
+		"eslint": "^5.16.0",
+		"eslint-config-standard": "^12.0.0",
+		"eslint-plugin-import": "^2.17.2",
+		"eslint-plugin-node": "^8.0.1",
+		"eslint-plugin-promise": "^4.1.1",
+		"eslint-plugin-standard": "^4.0.0"
 	},
-	"scripts": {
-		"test": "node test.js",
-		"transpile": "babel index.js --presets babel-preset-es2015 --out-dir dist",
-		"prepare": "npm run transpile",
-		"prepublishOnly": "npm run test"
+	"engines": {
+		"node": ">=8"
 	},
 	"engine": {
 		"node": ">=6"
-	},
-	"license": "ISC"
+	}
 }
