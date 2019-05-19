@@ -56,8 +56,5 @@
 	},
 	"engines": {
 		"node": ">=8"
-	},
-	"engine": {
-		"node": ">=6"
 	}
 }
