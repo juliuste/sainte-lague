@@ -30,8 +30,11 @@ const electionResults = { // number of votes per party
 	crazypeople: 11111
 }
 const seats = 420 // number of seats to be distributed
+const opt = { // options, can be null
+	draw: false // if a draw would be necessary to determine the seat count (e.g. 11 seats and two parties with 100 votes each), the library will throw an error, unless you set draw: true, in which case it will assert the seat(s) randomly
+}
 
-const parliament = sainteLague(electionResults, seats)
+const parliament = sainteLague(electionResults, seats, opt)
 ```
 
 The `parliament` variable will look like this:
