@@ -2,21 +2,11 @@
 
 const calculateSeats = (votes, divisor) => {
 	const distribution = {}
-	let seats = 0
-	for (let party in votes) {
-		distribution[party] = Math.round(votes[party] / divisor)
-		seats += distribution[party]
-	}
-	return { distribution, seats }
+	for (let party in votes) distribution[party] = Math.round(votes[party] / divisor)
+	return { distribution, seats: sum(distribution) }
 }
 
-const sum = (votes) => {
-	let sum = 0
-	for (let party in votes) {
-		sum += votes[party]
-	}
-	return sum
-}
+const sum = (votes) => Object.values(votes).reduce((accumulator, currentValue) => accumulator + currentValue, 0)
 
 const distribute = (votes, seats) => {
 	// initial settings for divisor finding
