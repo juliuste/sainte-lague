@@ -17,7 +17,7 @@ const distribute = (votes, seats, opt = {}) => {
 	const options = Object.assign({ draw: false }, opt)
 
 	if (Object.values(votes).length < 1) throw new Error('vote distribution must contain at least one party')
-	if (!Object.values(votes).every(voteCount => Number.isInteger(voteCount) && voteCount >= 0)) throw new Error('party vote counts must be non-negative integers')
+	if (!Object.values(votes).every(voteCount => typeof voteCount === 'number' && voteCount >= 0)) throw new Error('party vote counts must be non-negative integers')
 	if (!Number.isInteger(seats) || seats <= 0) throw new Error('seats must be a positive integer')
 	if (typeof options.draw !== 'boolean') throw new Error('opt.draw must be a boolean')
 
