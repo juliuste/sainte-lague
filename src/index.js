@@ -1,11 +1,11 @@
 'use strict'
 
-const roundWithPrecision = require('lodash/round')
-const sortBy = require('lodash/sortBy')
-const fromPairs = require('lodash/fromPairs')
-const range = require('lodash/range')
-const flatMap = require('lodash/flatMap')
-const sampleSize = require('lodash/sampleSize')
+import roundWithPrecision from 'lodash/round.js'
+import sortBy from 'lodash/sortBy.js'
+import fromPairs from 'lodash/fromPairs.js'
+import range from 'lodash/range.js'
+import flatMap from 'lodash/flatMap.js'
+import sampleSize from 'lodash/sampleSize.js'
 
 // we round all numbers to the same precision to catch floating point rounding errors
 // which is especially relevant if two parties should have exactly the same quotient for a seat
@@ -13,7 +13,7 @@ const precision = x => roundWithPrecision(x, 14)
 
 const sum = (partyValues) => Object.values(partyValues).reduce((accumulator, currentValue) => accumulator + currentValue, 0)
 
-const distribute = (votes, seats, opt = {}) => {
+export default (votes, seats, opt = {}) => {
 	const options = Object.assign({ draw: false }, opt)
 
 	if (Object.values(votes).length < 1) throw new Error('vote distribution must contain at least one party')
@@ -70,8 +70,6 @@ const distribute = (votes, seats, opt = {}) => {
 			return accumulator
 		},
 		// starting value: minumum seats per party
-		minimumSeatsPerParty
+		minimumSeatsPerParty,
 	)
 }
-
-module.exports = distribute

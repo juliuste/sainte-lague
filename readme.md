@@ -5,11 +5,8 @@ An implementation of the **[Sainte-Laguë](https://en.wikipedia.org/wiki/Webster
 *Attention: Since some countries (like Latvia or Norway) use a modification of the algorithm instead of this vanilla version, you should check your country's electoral legislature. Furthermore, I don't take any responsibility for the accuracy of the calculated numbers, even though I'm pretty confident with my implementation.*
 
 [![npm version](https://img.shields.io/npm/v/sainte-lague.svg)](https://www.npmjs.com/package/sainte-lague)
-[![Build Status](https://travis-ci.org/juliuste/sainte-lague.svg?branch=master)](https://travis-ci.org/juliuste/sainte-lague)
-[![Greenkeeper badge](https://badges.greenkeeper.io/juliuste/sainte-lague.svg)](https://greenkeeper.io/)
-[![dependency status](https://img.shields.io/david/juliuste/sainte-lague.svg)](https://david-dm.org/juliuste/sainte-lague)
-[![license](https://img.shields.io/github/license/juliuste/sainte-lague.svg?style=flat)](LICENSE)
-[![chat on gitter](https://badges.gitter.im/juliuste.svg)](https://gitter.im/juliuste)
+[![License](https://img.shields.io/github/license/juliuste/sainte-lague.svg?style=flat)](license)
+[![Contact me](https://img.shields.io/badge/contact-email-turquoise)](mailto:mail@juliustens.eu)
 
 ## Installation
 
@@ -19,8 +16,10 @@ npm install sainte-lague
 
 ## Usage
 
+**This package is [ESM only](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c).**
+
 ```js
-const sainteLague = require('sainte-lague')
+import sainteLague from 'sainte-lague'
 
 const electionResults = { // number of votes per party
 	socialists: 130755,
